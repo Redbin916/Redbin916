@@ -1,0 +1,78 @@
+# ===========================================================================
+# 🎨 테마 및 폰트 (Visuals)
+# ===========================================================================
+# 테마: Catppuccin
+theme = Catppuccin Mocha
+
+# 폰트: D2CodingLigature Nerd Font (한국어/아이콘 최적화)
+font-family = IosevkaTerm NFM
+font-size = 16
+font-thicken = true
+
+# 배경: 투명도 90% + 블러 효과 (Neovim 투명도와 조화)
+background-opacity = 0.9
+background-blur-radius = 20
+
+# 커서: Neovim이 커서 모양을 제어하도록 'no-cursor' 설정 권장
+cursor-style = block
+cursor-style-blink = true
+shell-integration-features = no-cursor
+
+
+# ===========================================================================
+# 🪟 창 및 레이아웃 (Window & Layout)
+# ===========================================================================
+# 맥 스타일 타이틀바 및 탭
+window-decoration = false
+macos-titlebar-style = tabs
+
+# 창 여백 (텍스트가 가장자리에 붙지 않게)
+window-padding-x = 12
+window-padding-y = 12
+window-padding-balance = true
+
+
+# ===========================================================================
+# ⌨️ 동작 및 입력 (Behavior & Input)
+# ===========================================================================
+# 맥 필수: Option 키를 Alt로 매핑 (Neovim/Zsh 단축키 호환)
+macos-option-as-alt = true
+
+# 클립보드: 드래그 시 자동 복사 & 공백 제거
+# copy-on-select = true
+# clipboard-trim-trailing-spaces = true
+
+# 마우스: 타이핑 중 커서 숨기기
+mouse-hide-while-typing = true
+
+# 쉘 지원이 필요하므로 실험적 기능 (작동 안 할 수도 있음)
+cursor-click-to-move = true
+
+# 스크롤: 넉넉한 스크롤백
+scrollback-limit = 10000
+
+# 쉘 통합 및 자동 업데이트
+shell-integration = zsh
+auto-update = download
+
+
+# ===========================================================================
+# ⚡️ 단축키 및 워크플로우 (Keybinds)
+# ===========================================================================
+# 전역 단축키: Quake 모드 (화면 상단에서 내려오는 터미널)
+keybind = global:cmd+backquote=toggle_quick_terminal
+quick-terminal-position = top
+quick-terminal-screen = main
+quick-terminal-animation-duration = 0.2
+
+# --- 분할 창 이동 (Focus) ---
+# 주의: 쉘 입력창에서 줄의 처음/끝으로 이동하는 기능(Cmd+Arrows)을 덮어씁니다.
+# 텍스트 이동이 필요하다면 opt+arrows로 변경하는 것을 고려하세요.
+keybind = cmd+left=goto_split:left
+keybind = cmd+right=goto_split:right
+keybind = cmd+up=goto_split:top
+keybind = cmd+down=goto_split:bottom
+
+# --- 탭 관리 ---
+keybind = cmd+shift+bracket_left=previous_tab
+keybind = cmd+shift+bracket_right=next_tab
