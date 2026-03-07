@@ -1,10 +1,10 @@
 # ===========================================================================
 # 🎨 테마 및 폰트 (Visuals)
 # ===========================================================================
-# 테마: Catppuccin
+# 테마
 theme = Catppuccin Mocha
 
-# 폰트: D2CodingLigature Nerd Font (한국어/아이콘 최적화)
+# 폰트
 font-family = IosevkaTerm NFM
 font-size = 16
 font-thicken = true
