@@ -2,9 +2,6 @@
 # 1. 기본 환경 설정 (Environment)
 # -----------------------------
 
-# Homebrew 경로 설정
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 # 기본 에디터를 Neovim으로 설정 (Git 등에서 자동으로 nvim이 열림)
 export EDITOR="nvim"
 export VISUAL="nvim"
@@ -71,7 +68,7 @@ alias lg='lazygit'
 alias yz='yazi'
 
 # Brewfile 관리 (Brewfile이 .config에 있다고 가정 시)
-alias brewup='brew bundle --file=~/.config/Brewfile'
+# alias brewup='brew bundle --file=~/.config/Brewfile'
 
 # -----------------------------
 # 5. FZF 설정 (Preview 기능 추가)
